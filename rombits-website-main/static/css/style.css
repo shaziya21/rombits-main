@@ -1,0 +1,195 @@
+.div1{
+  width: 500px;
+  margin: auto;
+  border: 3px solid #73AD21;
+  float: center;
+
+}
+
+.div2{
+  width: 500px;
+  margin: auto;
+  border: 3px solid #73AD21;
+  float: right;
+}
+.div7{
+  width: 500px;
+  margin: 10px;
+  border: 3px solid #73AD21;
+  float: left;
+  margin-top:20em;
+}
+.div3{
+  width: 500px;
+  margin: auto;
+  border: 3px solid #73AD21;
+  float: center;
+
+
+}
+.div4{
+  width: 500px;
+  margin: auto;
+  border: 3px solid #73AD21;
+  float: bottom left;
+}
+
+.div5{
+  width: 500px;
+  margin: auto;
+  border: 3px solid #73AD21;
+  float: bottom right;
+
+
+}
+.div6{
+  width: 500px;
+  margin: 10px;
+  border: 3px solid #73AD21;
+  margin-left: 63em;
+
+}
+
+*{
+  box-sizing: border-box;
+  padding:0;
+  margin:0;
+}
+body{
+  background-color:#32DABE;
+  /* background-image: url('website/static/ai.png'); */
+
+}
+.container {
+  display:flex;
+  justify-content:center;
+  margin-left:12em;
+  flex-wrap: wrap;
+
+}
+.card{
+  margin:10px;
+  width:220px;
+  /* width: auto; */
+  border-radius:15px;
+  margin-left: 5px;
+  justify-content: space-between;
+  flex-basis:15em;
+
+
+}
+.card-image{
+  background-color: #91EBDC;
+  height:180px;
+  margin-bottom:15px;
+  background-size:cover;
+  border-radius:10px 15px 0 0;
+  width:100%;
+
+}
+
+.car-1{
+  background-image: url('/static/ai.jpg')
+}
+
+.car-2{
+  background-image: url('/static/digital.png')
+}
+
+.car-3{
+  background-image: url('/static/cloud.jpg')
+}
+
+.car-4{
+  background-image: url('/static/sourcingAdvisory.jpg')
+}
+
+.car-5{
+  background-image: url('/static/strategy.jpg')
+}
+
+.car-6{
+  background-image: url('/static/datacenter.jpg')
+}
+
+.car-7{
+  background-image: url('/static/application.jpg')
+}
+.car-8{
+  background-image: url('/static/adaptiveai.jpg')
+}
+.car-9{
+  background-image: url('/static/chatbots.jpg')
+}
+.car-10{
+  background-image: url('/static/adchat.png')
+
+}
+.car-11{
+  background-image: url('/static/chatbotsupport.jpg')
+}
+.car-12{
+  background-image: url('/static/lead-generation.png')
+}
+.car-13{
+  background-image: url('/static/digital.jpg')
+}
+.car-14{
+  background-image: url('/static/cybersecurity.jpg')
+}
+.car-15{
+  background-image: url('/static/compliance.jpg')
+}
+
+.card h2{
+  padding: 10px;
+  text-align: center;
+  font-size: 30px;
+}
+.card p{
+  padding: 10px;
+}
+.card a{
+  background-color: black;
+  color: white;
+  padding:10px;
+  display: block;
+  text-align: center;
+  margin: 20px;
+
+}
+
+.card:hover{
+  background-color:gray;
+  color: white;
+  cursor: pointer;
+  transform: scale(1.03);
+  transition: all 1s ease;
+
+
+}
+
+
+
+
+
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
