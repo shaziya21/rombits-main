@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+{% extends "website/base.html" %}
+{% load static  %}
+{% block body_block %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}"/>
+
+
+<div class="dropdown">
+  <button class="dropbtn">Business Solutions</button>
+  <div class="dropdown-content">
+      <a href="#">Chatbots for Support</a>
+      <a href="#">Lead Generation Chatbots</a>
+      <a href="#">Digital Work Instructions for Manufacturing</a>
+      <a href="{% url 'security' %}">Cyber Security</a>
+      <a href="#">Compliance</a>
+  </div>
+</div>
+
+<div class="dropdown">
+  <button class="dropbtn">Higher Education Institutes</button>
+  <div class="dropdown-content">
+      <a href="#">Chatbots for Support</a>
+      <a href="#">Lead Generation Chatbots</a>
+      <a href="#">Digital Work Instructions for Manufacturing</a>
+      <a href="{% url 'security' %}">Cyber Security</a>
+      <a href="#">Compliance</a>
+  </div>
+</div>
+
+
+<div class="dropdown">
+  <button class="dropbtn">IT  Consulting</button>
+  <div class="dropdown-content">
+      <a href="#">Adaptive AI Learning Hub</a>
+      <a href="#">Learning Chatbots</a>
+      <a href="#">Administrative Chatbots</a>
+  </div>
+</div>
+
+
+
+{% endblock %}

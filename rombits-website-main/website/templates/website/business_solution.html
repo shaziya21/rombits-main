@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+{% extends "website/base.html" %}
+{% load static  %}
+{% block body_block %}
+
+
+<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}"/>
+<!-- <div class="button">
+  <a href="{% url 'index' %}" class="btn btn-primary" style="background-color:#00bcd4; ">Back</a>
+</div> -->
+
+<section class="container">
+  <div class="card">
+    <div class="card-image car-11"></div>
+    <h2><b>Chatbots for Support</b></h2>
+    <a href="">Read More</a>
+  </div>
+
+  <div class="card">
+    <div class="card-image car-12"></div>
+    <h2><b>Lead Generation Chatbots</b></h2>
+    <a href="">Read More</a>
+  </div>
+
+  <div class="card">
+    <div class="card-image car-13"></div>
+    <h2><b>Digital Work Instructions for Manufacturing</b></h2>
+    <a href="">Read More</a>
+  </div>
+
+
+  <div class="card">
+    <div class="card-image car-14"></div>
+    <h2><b>Cyber Security</b></h2>
+    <a href="{% url 'security' %}">Read More</a>
+  </div>
+
+
+  <div class="card">
+    <div class="card-image car-15"></div>
+    <h2><b>
+    </b></h2>
+      <a href="">Read More</a>
+  </div>
+
+</section>
+
+{% endblock %}

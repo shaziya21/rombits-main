@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+{% extends "website/base.html" %}
+{% load static  %}
+{% block body_block %}
+
+
+<link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}"/>
+
+
+<div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+
+  <div class="carousel-inner">
+    <div class="video">
+      <video autoplay muted loop>
+        <source src="/media/pexels-tima-miroshnichenko-7578618.mp4" type="video/mp4" >
+      </video>
+        <div class="carousel-caption d-none d-md-block">
+        <h1 style="text-align:left; font-size:80px;">INNOVATE BETTER!</h1>
+        <hr style="width:50%" size="5"><p></p>
+        <h3 style="width:50%; margin:0% 0% 20%; text-align:left;font-size: 300%;">Award-winning Artificial Intelligence, Blockchain and Automation Solutions for the Cloud.</h3>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+<div class="container-fluid bg-rblgreen">
+
+  <div class="container-fluid">
+    <br /><br />
+    <section class="counters">
+      <div class="row">
+        <div class="col-sm-3 my-auto">
+          <div class="counter" data-target="5000">5000</div>
+          <h4>Students using our AI hub</h4>
+        </div>
+        <div class="col-sm-3 my-auto">
+          <div class="counter" data-target="300000">300000</div>
+          <h4>Interactions with our chatbots</h4>
+        </div>
+        <div class="col-sm-3 my-auto">
+          <div class="counter" data-target="466000">466000</div>
+          <h4>Cost reduction in IT Operations</h4>
+        </div>
+        <div class="col-sm-3 my-auto">
+          <div class="counter" data-target="20000">20000</div>
+          <h4>Processes automated across sectors</h4>
+        </div>
+      </div>
+    </section>
+    <br /><br />
+  </div>
+
+  <div class="row tmrg bg-light">
+    <div class="col-sm-12">
+      <img src="/media/iafaward_transparent.png" class="d-block w-50 my-auto mx-auto" alt="...">
+    </div>
+  </div>
+
+  <div class="row lpink">
+    <div class="col-sm-7 my-auto text-left tmrg"><img src="/media/pixabay/school-3518726.png" class="d-block w-100" alt="..."></div>
+    <div class="col-sm-5 my-auto text-left tmrg">
+      <!-- <h1 class="rborange" style="font-weight: bold;">aiLearn</h1> -->
+      <h3 class="rbblue">Adaptive AI Learning Hub</h3>
+      <p>An omnichannel, interactive, learning platform engineered for higher educational institutes (colleges and universities).</p>
+        <a href="{% url 'ai_hub'%}" <button type="button" class="btn btn-outline-info mybtn">  Find out more</a></button>
+    </div>
+  </div>
+
+
+  <div class="row bg-dark">
+    <div class="col-sm-7"><img src="/media/pixabay/chatbot-3936760_1920.png" class="d-block w-100" alt="..."></div>
+    <div class="col-sm-5 my-auto text-left tmrg">
+      <!-- <h1 class="rborange" style="font-weight: bold;">aiBiz</h1> -->
+      <h3 class="rbblue">Chatbots for Business</h3>
+      <p class="text-light">Chatbot solution for your enterprise. Virtual agents available for customer care and lead generation, besides many other industry specific templates.</p>
+      <a href="{% url 'business_solution'%}" <button type="button" class="btn btn-outline-info mybtn">  Find out more</a></button>
+    </div>
+  </div>
+
+
+  <div class="row lpink">
+    <div class="col-sm-7"><img src="/media/pixabay/laptop-3361063_1920.png" class="d-block w-100" alt="..."></div>
+    <div class="col-sm-5 my-auto text-left tmrg">
+
+      <h3 class="rbblue">Chatbot API</h3>
+      <p>Conversational API for use by developers to create websites and mobile apps with AI with pre-trained NLP models.</p>
+      <button type="button" class="btn btn-outline-info mybtn">Find out more</button>
+    </div>
+  </div>
+
+
+  <div class="row bg-dark">
+    <div class="col-sm-7"><img src="/media/pixabay/compliance.png" class="d-block w-100" alt="..."></div>
+    <div class="col-sm-5 my-auto text-left tmrg">
+
+      <h3 class="rbblue">Security and Compliance</h3>
+      <p class="text-light">AI and SaaS based product that helps with implementation, auditing and real-time visibility of your enterprise's compliance and security.</p>
+      <button type="button" class="btn btn-outline-info mybtn">Find out more</button>
+    </div>
+  </div>
+
+
+  <div class="row lpink">
+    <div class="col-sm-7"><img src="/media/pixabay/it-consulting_img_new1.png" class="d-block w-100" alt="..."></div>
+    <div class="col-sm-5 my-auto text-left tmrg">
+      <h3 class="rbblue">IT Consulting</h3>
+      <p>Our consultants have delivered complex IT projects for the world's leading firms. Clients have trusted us to deliver even when the risks have been very high. It is because we assure delivery once a project is taken, are genuinely independent and most importantly, the team of consultants have a never give up attitude!</p>
+
+      <a href="{% url 'consulting'%}" <button type="button" class="btn btn-outline-info mybtn">  Find out more</a></button>
+    </div>
+  </div>
+
+
+  <div class="row bg-dark">
+    <div class="col-sm-7"><img src="/media/pixabay/compliance.png" class="d-block w-100" alt="..."></div>
+    <div class="col-sm-5 my-auto text-left tmrg">
+      <h3 class="rbblue">Trainings and Certifications</h3>
+      <p class="text-light">AI and SaaS based product that helps with implementation, auditing and real-time visibility of your enterprise's compliance and security.</p>
+
+    <button type="button" class="btn btn-outline-info mybtn">Find out more</button>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>
+<script src ="index.js"></script>
+
+{% endblock %}

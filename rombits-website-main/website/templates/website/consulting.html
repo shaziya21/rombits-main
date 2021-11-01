@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+{% extends "website/base.html" %}
+{% load static  %}
+{% block body_block %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}"/>
+
+<!-- <div class="button">
+  <a href="{% url 'index' %}" class="btn btn-primary" style="background-color:#00bcd4; ">Back</a>
+</div> -->
+
+<section class="container">
+  <div class="card">
+    <div class="card-image car-1"></div>
+    <h2><b>Artificial Intelligence CoE</b></h2>
+    <a href="">Read More</a>
+  </div>
+
+  <div class="card">
+    <div class="card-image car-2"></div>
+    <h2><b>Digital Transformation</b></h2>
+    <a href="">Read More</a>
+
+  </div>
+
+  <div class="card">
+    <div class="card-image car-3"></div>
+    <h2><b>Cloud Consulting</b></h2>
+    <a href="{% url 'cloud' %}">Read More</a>
+  </div>
+
+
+  <div class="card">
+    <div class="card-image car-4"></div>
+    <h2><b>Sourcing Advisory</b></h2>
+    <a href="">Read More</a>
+  </div>
+
+
+  <div class="card">
+    <div class="card-image car-5"></div>
+    <h2><b>IT Strategy Advisory</b></h2>
+    <a href="">Read More</a>
+
+  </div>
+
+
+  <div class="card">
+    <div class="card-image car-6"></div>
+    <h2><b>Data Center Services</b></h2>
+    <a href="">Read More</a>
+
+  </div>
+
+
+  <div class="card">
+    <div class="card-image car-7"></div>
+    <h2><b>Application Portfolio Optimization</b></h2>
+    <a href="">Read More</a>
+
+  </div>
+</section>
+
+{% endblock %}

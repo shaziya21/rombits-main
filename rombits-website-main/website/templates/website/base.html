@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Rombits | AI Learning Platform | Chatbots for Business | Chatbot API for Developers | Security and Compliance</title>
+
+  <link rel="icon" href="media/20210920_rombits_webicon.png" sizes="64x64" type="image/png">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Exo">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Daytona">
+
+  <link href=" https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js">
+
+
+ <!-- <link rel="stylesheet"  href="{% static 'css/style.css' %}"> -->
+ <link href="https://fonts.googleapis.com/css?family=Gugi" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}"/>
+  <script src="{% static 'js/base.js' %}"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+  <link href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css' rel='stylesheet'>
+  <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+</head>
+
+<style>
+
+.container {
+margin-top: 100px
+}
+
+
+.counter-box {
+display: block;
+background: FF0000;
+padding: 40px 20px 370px;
+text-align: center
+}
+
+.counter-box p {
+margin: 5px 0 0;
+padding: 0;
+color: #909090;
+font-size: 18px;
+font-weight: 500
+}
+
+.counter-box i {
+font-size: 60px;
+margin: 0 0 15px;
+color: #d2d2d2
+}
+
+.counter {
+display: block;
+font-size: 32px;
+font-weight: 700;
+color: #666;
+line-height: 28px
+}
+
+.counter-box.colored {
+background: #3acf87
+}
+
+.counter-box.colored p,
+.counter-box.colored i,
+.counter-box.colored .counter {
+color: #fff
+}
+.button{
+
+
+    text-align: center;
+    padding: 0px;
+    float: right;
+    /* top: 10px; */
+    left: 50%;
+    font-size: 16px;
+    margin: 30px 10px;
+    width: 160px;
+    font-weight: 900;
+
+
+}
+</style>
+
+
+
+<script type='text/javascript' src='https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js'></script>
+<script type='text/javascript'>
+
+$(document).ready(function() {
+$('.counter').each(function () {
+$(this).prop('Counter',0).animate({
+Counter: $(this).text()
+}, {
+duration: 4000,
+easing: 'swing',
+step: function (now) {
+$(this).text(Math.ceil(now));
+}
+});
+});
+
+});
+</script>
+
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="{% url 'index' %}"><img src="/media/rombits-lightgreen-logo_darker.png" style="width: 50%; height: 50%;"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <!-- <a href="#" class="navbar-brand">Brand</a> -->
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Business Solutions </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#" class="dropdown-item">Chatbots for Support</a></li>
+                        <li><a href="#" class="dropdown-item">Lead Generation Chatbots</a></li>
+                        <li><a href="#" class="dropdown-item">Digital Work Instructions for Manufacturing</a></li>
+                        <li><a href="{% url 'security' %}" class="dropdown-item">Cyber Security</a></li>
+                        <li><a href="#" class="dropdown-item">Compliance</a></li>
+                      </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Higher Education Institutes </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#" class="dropdown-item">Adaptive AI Learning Hub</a></li>
+                        <li><a href="#" class="dropdown-item">Learning Chatbots</a></li>
+                        <li><a href="#" class="dropdown-item">Administrative Chatbots</a></li>
+
+                      </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">IT Consulting</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#" class="dropdown-item">Artificial Intelligence CoE</a></li>
+                        <li><a href="#" class="dropdown-item">Digital Transformation</a></li>
+                        <li><a href="{% url 'cloud' %}" class="dropdown-item">Cloud Consulting</a></li>
+                        <li><a href="#" class="dropdown-item">Sourcing Advisory</a></li>
+                        <li><a href="#" class="dropdown-item">IT Strategy Advisory</a></li>
+                        <li><a href="#" class="dropdown-item">Data Center Services</a></li>
+                        <li><a href="#" class="dropdown-item">Application Portfolio Optimization</a></li>
+                      </ul>
+                    </li>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+          <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Business Solutions
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Chatbots for Support</a></li>
+                  <li><a class="dropdown-item" href="#">Lead Generation Chatbots</a></li>
+                  <li><a class="dropdown-item" href="#">Digital Work Instructions for Manufacturing</a></li>
+                  <li><a class="dropdown-item" href="{% url 'security' %}">Cyber Security</a></li>
+                  <li><a class="dropdown-item" href="#">Compliance</a></li>
+
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Higher Education Institutes
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Adaptive AI Learning Hub</a></li>
+                  <li><a class="dropdown-item" href="#">Learning Chatbots</a></li>
+                  <li><a class="dropdown-item" href="#">Administrative Chatbots</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  IT Consulting
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Artificial Intelligence CoE</a></li>
+                  <li><a class="dropdown-item" href="#">Digital Transformation</a></li>
+                  <li><a class="dropdown-item" href="{% url 'cloud' %}">Cloud Consulting</a></li>
+                  <li><a class="dropdown-item" href="#">Sourcing Advisory</a></li>
+                  <li><a class="dropdown-item" href="#">IT Strategy Advisory</a></li>
+                  <li><a class="dropdown-item" href="#">Data Center Services</a></li>
+                  <li><a class="dropdown-item" href="#">Application Portfolio Optimization</a></li>
+                </ul>
+              </li>
+
+            </ul> -->
+<!--
+            <div class="button">
+              <a href="{% url 'user_login' %}" class="btn btn-primary" style="background-color:#32DABE;">Login</a>
+            </div> -->
+
+          </div>
+        </div>
+      </nav>
+
+        {% block body_block %}
+        <!--Anything outside of this will be inherited if you extend-->
+        {% endblock %}
+        <div id="app"></div>
+        <script src="{% static 'dist/main.bundle.js' %}"></script>
+
+</body>
+</html>
